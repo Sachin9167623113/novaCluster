@@ -1,0 +1,1918 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- META -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="robots" content="" />
+    <meta name="description" content="" />
+
+    <!-- FAVICONS ICON -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+
+    <!-- PAGE TITLE HERE -->
+    <title>Nova Cluster | Home </title>
+
+    <!-- MOBILE SPECIFIC -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" type="text/css" href="css/loader.min.css" />
+    <!-- LOADER STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <!-- BOOTSTRAP STYLE SHEET -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/fontawesome/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- FONTAWESOME STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" />
+    <!-- OWL CAROUSEL STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/magnific-popup.min.css" />
+    <!-- MAGNIFIC POPUP STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- MAIN STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/rev-slider-4.css" />
+    <!-- REVOLUTION SLIDER 4 STYLE -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="plugins/revolution/revolution/css/settings.css"
+    />
+    <!-- REVOLUTION SLIDER CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="plugins/revolution/revolution/css/navigation.css"
+    />
+    <!-- REVOLUTION NAVIGATION STYLE -->
+    <!-- GOOGLE FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,800,800i,900"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Crete+Round:400,400i&amp;subset=latin-ext"
+      rel="stylesheet"
+    />
+
+<style>
+
+/* ================================
+   MODERN BOOTSTRAP CAROUSEL
+================================ */
+
+.hero-carousel {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0 0 24px 24px;
+}
+
+/* Carousel Item */
+.hero-carousel .carousel-item {
+  height: 85vh;
+  min-height: 550px;
+  overflow: hidden;
+}
+
+/* Background Image */
+.hero-carousel .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1);
+  transition: transform 8s ease;
+}
+
+/* Zoom Effect */
+.hero-carousel .carousel-item.active img {
+  transform: scale(1.08);
+}
+
+/* Dark Modern Overlay */
+.hero-carousel .carousel-item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0.55) 45%,
+      rgba(0, 0, 0, 0.15) 100%
+    );
+}
+
+/* Caption */
+.hero-carousel .carousel-caption {
+  z-index: 2;
+  top: 50%;
+  bottom: auto;
+  left: 8%;
+  right: auto;
+  width: min(750px, 80%);
+  text-align: left;
+  transform: translateY(-50%);
+}
+
+/* Small Label */
+.hero-carousel .carousel-caption .hero-tag {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 8px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Main Heading */
+.hero-carousel .carousel-caption h1 {
+  margin-bottom: 20px;
+
+  font-size: clamp(42px, 5vw, 78px);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -2px;
+}
+
+/* Paragraph */
+.hero-carousel .carousel-caption p {
+  max-width: 650px;
+  margin-bottom: 30px;
+
+  font-size: clamp(16px, 1.5vw, 20px);
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* ================================
+   BUTTONS
+================================ */
+
+.hero-carousel .btn-primary {
+  padding: 14px 28px;
+  border: none;
+  border-radius: 50px;
+
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.hero-carousel .btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Outline Button */
+.hero-carousel .btn-outline-light {
+  padding: 13px 28px;
+  border-radius: 50px;
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+.hero-carousel .btn-outline-light:hover {
+  transform: translateY(-3px);
+}
+
+/* ================================
+   NAVIGATION ARROWS
+================================ */
+
+.hero-carousel .carousel-control-prev,
+.hero-carousel .carousel-control-next {
+  top: 50%;
+  bottom: auto;
+
+  width: 55px;
+  height: 55px;
+
+  margin: 0 30px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+
+  transform: translateY(-50%);
+  opacity: 1;
+
+  transition: all 0.3s ease;
+}
+
+.hero-carousel .carousel-control-prev:hover,
+.hero-carousel .carousel-control-next:hover {
+  background: #fff;
+}
+
+/* Change Arrow on Hover */
+.hero-carousel .carousel-control-prev:hover .carousel-control-prev-icon,
+.hero-carousel .carousel-control-next:hover .carousel-control-next-icon {
+  filter: invert(1);
+}
+
+/* ================================
+   INDICATORS
+================================ */
+
+.hero-carousel .carousel-indicators {
+  justify-content: flex-start;
+  left: 8%;
+  right: auto;
+
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 40px;
+}
+
+.hero-carousel .carousel-indicators [data-bs-target] {
+  width: 35px;
+  height: 4px;
+
+  margin-right: 8px;
+  margin-left: 0;
+
+  border: 0;
+  border-radius: 20px;
+
+  background-color: rgba(255, 255, 255, 0.5);
+  opacity: 1;
+
+  transition: all 0.4s ease;
+}
+
+.hero-carousel .carousel-indicators .active {
+  width: 65px;
+  background-color: #fff;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 991px) {
+
+  .hero-carousel .carousel-item {
+    height: 75vh;
+    min-height: 500px;
+  }
+
+  .hero-carousel .carousel-caption {
+    left: 6%;
+    width: 88%;
+  }
+
+  .hero-carousel .carousel-indicators {
+    left: 6%;
+  }
+
+  .hero-carousel .carousel-control-prev,
+  .hero-carousel .carousel-control-next {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .hero-carousel {
+    border-radius: 0 0 18px 18px;
+  }
+
+  .hero-carousel .carousel-item {
+    height: 650px;
+    min-height: auto;
+  }
+
+  .hero-carousel .carousel-caption {
+    left: 25px;
+    width: calc(100% - 50px);
+  }
+
+  .hero-carousel .carousel-caption h1 {
+    font-size: 42px;
+    letter-spacing: -1px;
+  }
+
+  .hero-carousel .carousel-caption p {
+    font-size: 16px;
+  }
+
+  .hero-carousel .btn-primary,
+  .hero-carousel .btn-outline-light {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+
+  .hero-carousel .carousel-indicators {
+    left: 25px;
+    margin-bottom: 25px;
+  }
+}
+
+
+</style>
+
+  </head>
+
+  <body>
+    <div class="page-wraper">
+      <!-- HEADER START -->
+      <header class="site-header header-style-2 nav-wide">
+        <div class="sticky-header main-bar-wraper">
+          <div class="main-bar bg-white p-t10">
+            <div class="container">
+              <div class="logo-header">
+                <div class="logo-header-inner logo-header-one">
+                  <a href="index.html">
+                    <img
+                      src="images/logo-dark.png"
+                      width="171"
+                      height="49"
+                      alt=""
+                    />
+                  </a>
+                </div>
+              </div>
+              <!-- ETRA Nav -->
+              <div class="extra-nav">
+                <div class="extra-cell">
+                  <a href="javascript:;" class="vnav-btn">
+                    <span class="fa fa-bars"></span>
+                  </a>
+                </div>
+              </div>
+              <div class="extra-nav">
+                <div class="extra-cell">
+                  <a href="#search" class="site-search-btn"
+                    ><i class="fa fa-search"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="extra-nav header-top-info">
+                <div class="extra-cell">
+                  <div class="wt-topbar-right clearfix top-bar">
+                    <ul class="social-bx list-inline pull-right">
+                      <li>
+                        <a
+                          href="javascript:void(0);"
+                          class="fa fa-facebook"
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="javascript:void(0);"
+                          class="fa fa-linkedin"
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);" class="fa fa-youtube"></a>
+                      </li>
+                      <li>
+                        <a
+                          href="javascript:void(0);"
+                          class="fa fa-instagram"
+                        ></a>
+                      </li>
+                    </ul>
+                    <ul class="list-unstyled list-inline e-p-bx pull-right">
+                      <li><i class="fa fa-envelope"></i>Info@gmail.com</li>
+                      <li><i class="fa fa-phone"></i>(+91) 123-4567</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ETRA Nav -->
+              <div class="extra-nav">
+                <div class="extra-cell">
+                  <div class="dropdown share-icon-btn2">
+                    <a
+                      href="javascript:;"
+                      class="site-search-btn dropdown-toggle"
+                      data-bs-toggle="dropdown"
+                      ><i class="fa fa-share-alt"></i
+                    ></a>
+                    <div class="dropdown-menu bg-white">
+                      <div class="top-bar">
+                        <ul class="social-bx list-inline">
+                          <li>
+                            <a
+                              href="javascript:void(0);"
+                              class="fa fa-facebook"
+                            ></a>
+                          </li>
+                          <li>
+                            <a
+                              href="javascript:void(0);"
+                              class="fa fa-twitter"
+                            ></a>
+                          </li>
+                          <li>
+                            <a
+                              href="javascript:void(0);"
+                              class="fa fa-linkedin"
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0);" class="fa fa-rss"></a>
+                          </li>
+                          <li>
+                            <a
+                              href="javascript:void(0);"
+                              class="fa fa-youtube"
+                            ></a>
+                          </li>
+                          <li>
+                            <a
+                              href="javascript:void(0);"
+                              class="fa fa-instagram"
+                            ></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- SITE Search -->
+              <div id="search">
+                <span class="close"></span>
+                <form
+                  role="search"
+                  id="searchform"
+                  action="#"
+                  method="get"
+                  class="radius-xl"
+                >
+                  <div class="input-group">
+                    <input
+                      value=""
+                      name="q"
+                      type="search"
+                      placeholder="Type to search"
+                    />
+                    <span class="input-group-btn"
+                      ><button type="button" class="search-btn">
+                        <i class="fa fa-search"></i></button
+                    ></span>
+                  </div>
+                </form>
+              </div>
+
+              <!-- STYLE SWITCHER  ======= -->
+              <div class="nav-sidebar">
+                <a href="javascript:;" class="vnav-close"></a>
+                <div class="nav-siderbar-scroll">
+                  <div class="vertical-content-wrap">
+                    <div class="vertical-content-area vertical-centered">
+                      <!-- MAIN Vav -->
+                      <div class="vertical-nav">
+                        <ul class="nav navbar-nav">
+                          <li>
+                           <a href="index.html">Home</a>
+                          </li>
+                          <li>
+                            <a href="javascript:;">About Us</a>
+                            <ul class="sub-menu v-sub-menu">
+                              <li>
+                                <a href="#">Organisation</a>
+                              </li>
+                              <li>
+                                <a href="#">Our Vision & Mission</a>
+                              </li>
+                              <li>
+                                <a href="#">Our Team</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="javascript:;">Projects</a>
+                            <ul class="sub-menu v-sub-menu">
+                              <li><a href="#">Portfolio</a></li>
+                              <li><a href="#">Interior</a></li>
+                              <li><a href="#">Architechture</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                           <a href="#">Contact</a>
+                          </li>
+                           
+                         
+                        
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- STYLE SWITCHER END ==== -->
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- HEADER END -->
+
+      <!-- CONTENT START -->
+      <div class="page-content">
+       
+
+
+<div
+  id="heroCarousel"
+  class="carousel slide carousel-fade hero-carousel"
+  data-bs-ride="carousel"
+>
+  
+  <!-- Indicators -->
+  <div class="carousel-indicators">
+    <button
+      type="button"
+      data-bs-target="#heroCarousel"
+      data-bs-slide-to="0"
+      class="active"
+      aria-current="true"
+    ></button>
+
+    <button
+      type="button"
+      data-bs-target="#heroCarousel"
+      data-bs-slide-to="1"
+    ></button>
+
+    <button
+      type="button"
+      data-bs-target="#heroCarousel"
+      data-bs-slide-to="2"
+    ></button>
+  </div>
+
+  <!-- Slides -->
+  <div class="carousel-inner">
+
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+      <img
+        src="images/main-slider/slider1/slide1.jpg"
+        class="d-block w-100"
+        alt="Slide 1"
+      />
+
+      <div class="carousel-caption">
+        <span class="hero-tag">Innovation & Technology</span>
+
+        <!-- <h1>Building Better Digital Experiences</h1>
+
+        <p>
+          We create modern digital solutions that help businesses
+          grow, connect and transform.
+        </p>
+
+        <a href="#" class="btn btn-primary me-2">
+          Explore Services
+        </a>
+
+        <a href="#" class="btn btn-outline-light">
+          View Projects
+        </a> -->
+      </div>
+    </div>
+
+
+    <!-- Slide 2 -->
+    <div class="carousel-item">
+      <img
+        src="images/main-slider/slider1/slide2.jpg"
+        class="d-block w-100"
+        alt="Slide 2"
+      />
+
+      <div class="carousel-caption">
+        <span class="hero-tag">Creative Solutions</span>
+
+        <!-- <h1>Design That Creates Impact</h1>
+
+        <p>
+          Combining creativity, strategy and technology to build
+          powerful experiences.
+        </p>
+
+        <a href="#" class="btn btn-primary">
+          Learn More
+        </a> -->
+      </div>
+    </div>
+
+
+    <!-- Slide 3 -->
+    <div class="carousel-item">
+      <img
+        src="images/main-slider/slider1/slide3.jpg"
+        class="d-block w-100"
+        alt="Slide 3"
+      />
+
+      <div class="carousel-caption">
+        <span class="hero-tag">Future Ready</span>
+
+        <!-- <h1>Transforming Ideas Into Reality</h1>
+
+        <p>
+          Delivering innovative solutions for businesses ready
+          to move forward.
+        </p>
+
+        <a href="#" class="btn btn-primary">
+          Get Started
+        </a> -->
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- Previous Button -->
+  <button
+    class="carousel-control-prev"
+    type="button"
+    data-bs-target="#heroCarousel"
+    data-bs-slide="prev"
+  >
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+
+  <!-- Next Button -->
+  <button
+    class="carousel-control-next"
+    type="button"
+    data-bs-target="#heroCarousel"
+    data-bs-slide="next"
+  >
+    <span class="carousel-control-next-icon"></span>
+  </button>
+
+</div>
+
+
+       
+        
+        <!-- SLIDER END -->
+
+        <!-- WELCOME SECTION START -->
+        <div class="section-full clearfix p-t80 bg-gray">
+          <div class="container">
+            <div class="section-content">
+              <div class="row">
+                <div class="col-lg-5 col-md-12 m-b30  text-black">
+                  <span class="font-30 font-weight-300 d-block m-b10"
+                    >Welcome</span
+                  >
+                  <h2 class="font-40 text-uppercase">
+                    Designing Spaces. Defining Experiences.
+                  </h2>
+                  <p><strong>Architecture that inspires, endures, and belongs.</strong></p>
+                  <p>
+                    We create thoughtful architectural spaces where form, function, and human experience come together.
+                  </p>
+                  <p class="text-lowercasex">
+                    From contemporary residences and commercial environments to large-scale developments,
+                    our approach combines innovative design, sustainable thinking, 
+                    and meticulous attention to detail to create spaces that stand the test of time.
+                  </p>
+                  <!-- <a
+                    href="about-1.html"
+                    class="btn-half site-button button-lg m-b15"
+                    ><span>Read More</span><em></em
+                  ></a> -->
+                </div>
+
+                <div class="col-lg-7 col-md-12">
+                  <div class="m-carousel-1 m-l100">
+                    <div class="owl-carousel home-carousel-1 owl-btn-vertical-center">
+                      <!-- COLUMNS 1 -->
+                      <div class="item">
+                        <div class="ow-img wt-img-effect zoom-slow">
+                          <a href="about-1.html"
+                            ><img src="images/gallery/pic1.jpg" alt=""
+                          /></a>
+                        </div>
+                      </div>
+                      <!-- COLUMNS 2 -->
+                      <div class="item">
+                        <div class="ow-img wt-img-effect zoom-slow">
+                          <a href="about-1.html"
+                            ><img src="images/gallery/pic2.jpg" alt=""
+                          /></a>
+                        </div>
+                      </div>
+                      <!-- COLUMNS 3 -->
+                      <div class="item">
+                        <div class="owl-img wt-img-effect zoom-slow">
+                          <a href="about-1.html"
+                            ><img src="images/gallery/pic3.jpg" alt=""
+                          /></a>
+                        </div>
+                      </div>
+                      <!-- COLUMNS 4 -->
+                      <div class="item">
+                        <div class="ow-img wt-img-effect zoom-slow">
+                          <a href="about-1.html"
+                            ><img src="images/gallery/pic4.jpg" alt=""
+                          /></a>
+                        </div>
+                      </div>
+                      <!-- COLUMNS 5 -->
+                      <div class="item">
+                        <div class="ow-img wt-img-effect zoom-slow">
+                          <a href="about-1.html"
+                            ><img src="images/gallery/pic5.jpg" alt=""
+                          /></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="hilite-title p-lr20 m-tb20 text-right text-uppercase bdr-gray bdr-right"
+              >
+                <strong>Large-Scale </strong>
+                <span class="text-black">Developments</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- WELCOME  SECTION END -->
+
+        <!-- LATEST PRJECTS SLIDER START -->
+        <div class="section-full p-t80 p-lr80 latest_project-outer square_shape3">
+          <!-- TITLE START -->
+          <div class="section-head text-left">
+            <div class="row">
+              <div class="col-xl-5 col-lg-12 col-md-12">
+                <h2 class="text-uppercase font-36">Our Work</h2>
+                <div class="wt-separator-outer">
+                  <div class="wt-separator bg-black"></div>
+                </div>
+              </div>
+              <div class="col-xl-7 col-lg-12 col-md-12">
+                <ul class="btn-filter-wrap">
+                  <li class="btn-filter btn-active" data-filter="*">
+                    All Project
+                  </li>
+                  <li class="btn-filter" data-filter=".building-col">
+                   Architechture
+                  </li>
+                  <li class="btn-filter" data-filter=".interior-col">
+                    Interior
+                  </li>
+                  <!-- <li class="btn-filter" data-filter=".restaurant-col">
+                    Restaurant
+                  </li> -->
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- TITLE END -->
+
+          <!-- IMAGE CAROUSEL START -->
+          <div class="section-content">
+            <div class="owl-carousel owl-carousel-filter owl-btn-bottom-left">
+              <!-- COLUMNS 1 -->
+              <div class="item fadingcol building-col">
+                <div class="wt-img-effect">
+                  <img src="images/gallery/portrait/pic1.jpg" alt="" />
+                  <div class="overlay-bx-2">
+                    <div class="line-amiation">
+                      <div class="text-white font-weight-300 p-a40">
+                        <h2>
+                          <a
+                            href="project-detail.html"
+                            class="text-white font-20 letter-spacing-4 text-uppercase"
+                            >Working alongside Architects & Developers</a
+                          >
+                        </h2>
+                        <p>
+                          we deliver integrated architectural and 
+                          interior solutions built around precision, performance, and innovation. 
+                        </p>
+                        <a
+                          href="project-detail.html"
+                          class="v-button letter-spacing-4 font-12 text-uppercase p-l20"
+                          >Read More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- COLUMNS 2 -->
+              <div class="item fadingcol building-col">
+                <div class="wt-img-effect">
+                  <img src="images/gallery/portrait/pic3.jpg" alt="" />
+                  <div class="overlay-bx-2">
+                    <div class="line-amiation">
+                      <div class="text-white font-weight-300 p-a40">
+                        <h2>
+                          <a
+                            href="project-detail.html"
+                            class="text-white font-20 letter-spacing-4 text-uppercase"
+                            >Facade Engineering & BIM-driven Workflows</a
+                          >
+                        </h2>
+                        <p>
+                          we turn complex design ideas into coordinated, efficient, and build-ready outcomes.
+                        </p>
+                        <a
+                          href="project-detail.html"
+                          class="v-button letter-spacing-4 font-12 text-uppercase p-l20"
+                          >Read More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- COLUMNS 3 -->
+
+              <div class="item fadingcol building-col">
+                <div class="wt-img-effect">
+                  <img src="images/gallery/portrait/pic6.jpg" alt="" />
+                  <div class="overlay-bx-2">
+                    <div class="line-amiation">
+                      <div class="text-white font-weight-300 p-a40">
+                        <h2>
+                          <a
+                            href="project-detail.html"
+                            class="text-white font-20 letter-spacing-4 text-uppercase"
+                            >From concept development to detailed design</a
+                          >
+                        </h2>
+                        <p>
+                          We create solutions that balance aesthetic vision, technical performance, sustainability, and buildability,
+                          ensuring every decision contributes to the success of the project.
+                        </p>
+                        <a
+                          href="project-detail.html"
+                          class="v-button letter-spacing-4 font-12 text-uppercase p-l20"
+                          >Read More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- COLUMNS 4 -->
+              <div class="item fadingcol building-col">
+                <div class="wt-img-effect">
+                  <img src="images/gallery/portrait/pic6.jpg" alt="" />
+                  <div class="overlay-bx-2">
+                    <div class="line-amiation">
+                      <div class="text-white font-weight-300 p-a40">
+                        <h2>
+                          <a
+                            href="project-detail.html"
+                            class="text-white font-20 letter-spacing-4 text-uppercase"
+                            >Accurately reflecting the architectural design and detailing requirements</a
+                          >
+                        </h2>
+                        <p>
+                          Modeled intricate curved, tapered, and flared column forms, maintaining geometric accuracy and consistent architectural appearance.
+                        </p>
+                        <a
+                          href="project-detail.html"
+                          class="v-button letter-spacing-4 font-12 text-uppercase p-l20"
+                          >Read More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- COLUMNS 5 -->
+              <div class="item fadingcol interior-col">
+                <div class="wt-img-effect">
+                  <img src="images/gallery/portrait/pic5.jpg" alt="" />
+                  <div class="overlay-bx-2">
+                    <div class="line-amiation">
+                      <div class="text-white font-weight-300 p-a40">
+                        <h2>
+                          <a
+                            href="project-detail.html"
+                            class="text-white font-20 letter-spacing-4 text-uppercase"
+                            >Maintain geometric accuracy and consistent architectural appearance</a
+                          >
+                        </h2>
+                        <p>
+                          Converted complex architectural concepts into precise, coordinated, 
+                          and construction-oriented BIM models suitable for design development 
+                          and execution.
+                        </p>
+                        <a
+                          href="project-detail.html"
+                          class="v-button letter-spacing-4 font-12 text-uppercase p-l20"
+                          >Read More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- COLUMNS 6 -->
+              <div class="item fadingcol interior-col">
+                <div class="wt-img-effect">
+                  <img src="images/gallery/portrait/pic4.jpg" alt="" />
+                  <div class="overlay-bx-2">
+                    <div class="line-amiation">
+                      <div class="text-white font-weight-300 p-a40">
+                        <h2>
+                          <a
+                            href="project-detail.html"
+                            class="text-white font-20 letter-spacing-4 text-uppercase"
+                            >Facade Panels & Complex Ceiling – BIM Development</a
+                          >
+                        </h2>
+                        <p>
+                          Created comprehensive BIM models for signature façade column systems, accurately reflecting the architectural design and detailing requirements.
+                        </p>
+                        <a
+                          href="project-detail.html"
+                          class="v-button letter-spacing-4 font-12 text-uppercase p-l20"
+                          >Read More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- COLUMNS 7 -->  
+           
+              <div class="item fadingcol interior-col">
+                <div class="wt-img-effect">
+                  <img src="images/gallery/portrait/pic3.jpg" alt="" />
+                  <div class="overlay-bx-2">
+                    <div class="line-amiation">
+                      <div class="text-white font-weight-300 p-a40">
+                        <h2>
+                          <a
+                            href="project-detail.html"
+                            class="text-white font-20 letter-spacing-4 text-uppercase"
+                            >Modern Concrete Residence</a
+                          >
+                        </h2>
+                        <p>
+                          A contemporary residential design combining clean
+                          architectural lines, exposed concrete elements, and
+                          expansive openings to create a refined living space.
+                        </p>
+                        <a
+                          href="project-detail.html"
+                          class="v-button letter-spacing-4 font-12 text-uppercase p-l20"
+                          >Read More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- COLUMNS 8 -->
+              <div class="item fadingcol interior-col">
+                <div class="wt-img-effect">
+                  <img src="images/gallery/portrait/pic2.jpg" alt="" />
+                  <div class="overlay-bx-2">
+                    <div class="line-amiation">
+                      <div class="text-white font-weight-300 p-a40">
+                        <h2>
+                          <a
+                            href="project-detail.html"
+                            class="text-white font-20 letter-spacing-4 text-uppercase"
+                            >Facade Panels & Complex Ceiling – BIM Development</a>
+                        </h2>
+                        <ul>
+                          <li>Detailed BIM development of GRC Facade Panelization</li>
+                          <li>Geometry control and alignment for curved and vertical surfaces</li>
+                          <li>BIM modeling of complex food hall ceiling systems</li>
+                          <li>Coordination for constructability and design intent</li>
+                        </ul>
+                        <a
+                          href="project-detail.html"
+                          class="v-button letter-spacing-4 font-12 text-uppercase p-l20"
+                          >Read More</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div
+            class="hilite-title p-lr20 m-tb20 text-right text-uppercase bdr-gray bdr-right"
+          >
+            <strong>Awesome</strong>
+            <span class="text-black">Designs</span>
+          </div> -->
+        </div>
+        <!-- LATEST PRJECTS SLIDER END -->
+
+        <!-- WHO WE ARE SECTION START -->
+        <div
+          class="section-full p-t140 clearfix bg-repeat tm-wo-we-r"
+          style="background-image: url(images/background/ptn-1.png)"
+        >
+          <div class="container-fluid">
+            <div class="section-content">
+              <div class="row d-flex align-items-center">
+                <div class="col-xl-6 col-lg-5 col-md-12">
+                  <div class="wt-left-part">
+                    <div class="text-uppercase text-black">
+                      <span class="font-30 font-weight-300 d-block m-b10"
+                        >Who we are
+                      </span>
+                      <h2 class="font-40">
+                        We are creative architecture Studio
+                      </h2>
+                      <p>
+                       Working alongside architects, developers, and contractors, we deliver integrated architectural and interior solutions built around precision,
+                       performance, and innovation. Through facade engineering and BIM-driven workflows, we turn complex design ideas into coordinated, efficient,
+                       and build-ready outcomes.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-6 col-lg-7 col-md-12">
+                  <div class="m-carousel-2">
+                    <div
+                      class="owl-carousel carousel-hover home-carousel-2 owl-btn-vertical-center"
+                    >
+                      <!-- COLUMNS 1 -->
+                      <div class="item">
+                        <div class="wt-box">
+                          <div class="ow-img wt-carousel-block gradi-black">
+                            <img src="images/projects/pic-1.jpg" alt="" />
+                            <div class="p-a50 wt-carousel-info text-white">
+                              <div class="carousel-line">
+                                <h2 class="font-28 font-weight-400 m-b10">
+                                  Lucknow International Airport
+                                </h2>
+                                <p class="m-b0">
+                                  The architectural development of Lucknow International Airport involved several distinctive
+                                  façade and canopy elements that required precise digital modeling and detailed technical coordination.
+                                  The project presented the challenge of converting sophisticated architectural forms into accurate and 
+                                  practical BIM solutions while preserving the intended visual character of the design.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- COLUMNS 2 -->
+                      <div class="item">
+                        <div class="wt-box">
+                          <div class="ow-img wt-carousel-block gradi-black">
+                            <img src="images/projects/pic-2.jpg" alt="" />
+                            <div class="p-a50 wt-carousel-info text-white">
+                              <div class="carousel-line">
+                                <h2 class="font-28 font-weight-400 m-b10">
+                                  Adani Navi Mumbai International Airport
+                                </h2>
+                                <p class="m-b0">
+                                 Complex Column Facade – BIM Development Scope of Work. 
+                                </p>
+                                <ul>
+                                  <li>BIM development of sculptural, façade-integrated structural columns.</li>
+                                  <li>Precise modeling of complex geometries, curves, and critical junctions.</li>
+                                  <li>Seamless coordination of column geometry with roof structures and interior systems.</li>
+                                  <li>BIM-driven development of signature columns serving as a defining architectural and structural feature of the terminal.</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                     
+                    </div>
+                    <div class="carousel-bg-img">
+                      <img src="images/slider-corner.jpg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div
+              class="hilite-title p-lr20 m-tb20 text-left text-uppercase bdr-gray bdr-left"
+            >
+              <strong>International Projects</strong>
+              <span class="text-black">India, Middle East & U.S.</span>
+            </div>
+          </div>
+        </div>
+        <!-- WHO WE ARE SECTION END -->
+
+        <!-- OUR EXPERTS SECTION START -->
+        <div class="section-full bg-gray square_shape3">
+          <div class="container-fluid">
+            <div class="section-content">
+              <div class="row">
+                <div
+                  class="col-lg-6 col-md-12 bg-black square_shape1 square_shape2"
+                >
+                  <div class="wt-left-part2 m-experts p-t90">
+                    <!-- TITLE START -->
+                    <div class="section-head text-left text-white">
+                      <h2 class="text-uppercase font-36">Our Team</h2>
+                      <div class="wt-separator-outer">
+                        <div class="wt-separator bg-white"></div>
+                      </div>
+                    </div>
+                    <!-- TITLE END -->
+                    <div class="wt-team-six large-pic">
+                      <div class="wt-team-media wt-thum-bx">
+                        <img src="images/our-team5/pic1.jpg" alt="" />
+                      </div>
+                      <div
+                        class="wt-team-info text-center p-lr10 p-tb20 text-white"
+                      >
+                        <h2
+                          class="wt-team-title text-uppercase text-white font-32 font-weight-500"
+                        >
+                          Rajeev Prakash
+                        </h2>
+                        <p class="font-22">Co-manager associated</p>
+                        <ul
+                          class="social-icons social-md social-square social-dark white-border has-bg"
+                        >
+                          <li>
+                            <a
+                              href="javascript:void(0);"
+                              class="fa fa-facebook"
+                            ></a>
+                          </li>
+                          <li>
+                            <a
+                              href="javascript:void(0);"
+                              class="fa fa-twitter"
+                            ></a>
+                          </li>
+                          <li>
+                            <a
+                              href="javascript:void(0);"
+                              class="fa fa-linkedin"
+                            ></a>
+                          </li>
+                          <li>
+                            <a
+                              href="javascript:void(0);"
+                              class="fa fa-youtube"
+                            ></a>
+                          </li>
+                          <li>
+                            <a
+                              href="javascript:void(0);"
+                              class="fa fa-instagram"
+                            ></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div
+                      class="hilite-title p-lr20 m-tb20 text-left text-uppercase bdr-gray bdr-left"
+                    >
+                      <strong class="text-gray">Our</strong>
+                      <span class="text-white">Team Members</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                  <div class="wt-right-part2 team-outer">
+                    <div class="row">
+                      <!-- COLUMNS 1 -->
+                      <div
+                        class="col-md-6 col-sm-6 col-xs-6 col-xs-100pc m-tb15"
+                      >
+                        <div class="wt-team-six bg-white">
+                          <div class="wt-team-media wt-thum-bx wt-img-overlay1">
+                            <img src="images/our-team5/pic2.jpg" alt="" />
+                            <div class="overlay-bx">
+                              <div class="overlay-icon">
+                                <ul
+                                  class="social-icons social-square social-dark"
+                                >
+                                  <li>
+                                    <a
+                                      href="javascript:void(0);"
+                                      class="fa fa-facebook"
+                                    ></a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="javascript:void(0);"
+                                      class="fa fa-twitter"
+                                    ></a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="javascript:void(0);"
+                                      class="fa fa-linkedin"
+                                    ></a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="javascript:void(0);"
+                                      class="fa fa-youtube"
+                                    ></a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="javascript:void(0);"
+                                      class="fa fa-instagram"
+                                    ></a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="wt-team-info text-center bg-white p-lr10 p-tb20"
+                          >
+                            <h5 class="wt-team-title text-uppercase m-a0">
+                              Vikas Sharma
+                            </h5>
+                            <p class="m-b0">Co-manager associated</p>
+                            <!---->
+                          </div>
+                        </div>
+                      </div>
+                      <!-- COLUMNS 2 -->
+                      <div
+                        class="col-md-6 col-sm-6 col-xs-6 col-xs-100pc m-tb15"
+                      >
+                        <div class="wt-team-six bg-white">
+                          <div class="wt-team-media wt-thum-bx wt-img-overlay1">
+                            <img src="images/our-team5/pic3.jpg" alt="" />
+                            <div class="overlay-bx">
+                              <div class="overlay-icon">
+                                <ul
+                                  class="social-icons social-square social-dark"
+                                >
+                                  <li>
+                                    <a
+                                      href="javascript:void(0);"
+                                      class="fa fa-facebook"
+                                    ></a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="javascript:void(0);"
+                                      class="fa fa-twitter"
+                                    ></a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="javascript:void(0);"
+                                      class="fa fa-linkedin"
+                                    ></a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="javascript:void(0);"
+                                      class="fa fa-youtube"
+                                    ></a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="javascript:void(0);"
+                                      class="fa fa-instagram"
+                                    ></a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="wt-team-info text-center bg-white p-lr10 p-tb20"
+                          >
+                            <h5 class="wt-team-title text-uppercase m-a0">
+                              Mukul Kumar
+                            </h5>
+                            <p class="m-b0">Co-manager associated</p>
+                            <!---->
+                          </div>
+                        </div>
+                      </div>
+                      <!-- COLUMNS 3 -->
+                      <div
+                        class="col-md-6 col-sm-6 col-xs-6 col-xs-100pc m-tb15"
+                      >
+                        <div class="wt-team-six bg-white">
+                          <div class="wt-team-media wt-thum-bx wt-img-overlay1">
+                            <img src="images/our-team5/pic4.jpg" alt="" />
+                            <div class="overlay-bx">
+                              <div class="overlay-icon">
+                                <ul
+                                  class="social-icons social-square social-dark"
+                                >
+                                  <li>
+                                    <a
+                                      href="javascript:void(0);"
+                                      class="fa fa-facebook"
+                                    ></a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="javascript:void(0);"
+                                      class="fa fa-twitter"
+                                    ></a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="javascript:void(0);"
+                                      class="fa fa-linkedin"
+                                    ></a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="javascript:void(0);"
+                                      class="fa fa-youtube"
+                                    ></a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="javascript:void(0);"
+                                      class="fa fa-instagram"
+                                    ></a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="wt-team-info text-center bg-white p-lr10 p-tb20"
+                          >
+                            <h5 class="wt-team-title text-uppercase m-a0">
+                              Anand Prakash
+                            </h5>
+                            <p class="m-b0">Co-manager associated</p>
+                            <!---->
+                          </div>
+                        </div>
+                      </div>
+                      <!-- COLUMNS 4 -->
+                      <div
+                        class="col-md-6 col-sm-6 col-xs-6 col-xs-100pc m-tb15"
+                      >
+                        <div class="wt-team-six bg-white">
+                          <div class="wt-team-media wt-thum-bx wt-img-overlay1">
+                            <img src="images/our-team5/pic5.jpg" alt="" />
+                            <div class="overlay-bx">
+                              <div class="overlay-icon">
+                                <ul
+                                  class="social-icons social-square social-dark"
+                                >
+                                  <li>
+                                    <a
+                                      href="javascript:void(0);"
+                                      class="fa fa-facebook"
+                                    ></a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="javascript:void(0);"
+                                      class="fa fa-twitter"
+                                    ></a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="javascript:void(0);"
+                                      class="fa fa-linkedin"
+                                    ></a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="javascript:void(0);"
+                                      class="fa fa-youtube"
+                                    ></a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="javascript:void(0);"
+                                      class="fa fa-instagram"
+                                    ></a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="wt-team-info text-center bg-white p-lr10 p-tb20"
+                          >
+                            <h5 class="wt-team-title text-uppercase m-a0">
+                              Abhinav Singh
+                            </h5>
+                            <p class="m-b0">Co-manager associated</p>
+                            <!---->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- OUR EXPERTS SECTION END -->
+
+        <!-- BLOG SECTION START -->
+        <div
+          class="section-full p-t80 clearfix bg-repeat"
+          style="background-image: url(images/background/ptn-1.png)"
+        >
+          <div class="container">
+            <div class="section-content">
+              <!-- TITLE START -->
+              <div class="section-head text-left">
+                <h2 class="text-uppercase font-36">BIM Expertise</h2>
+                <div class="wt-separator-outer">
+                  <div class="wt-separator bg-black"></div>
+                </div>
+              </div>
+              <!-- TITLE END -->
+              <div class="row">
+                <div class="col-lg-6 col-md-12">
+                  <div
+                    class="overlay-wraper bg-no-repeat bg-cover latest-blog-dark-outer p-a20 m-b30"
+                    style="
+                      background-image: url(images/blog/landscap-half/pic1.jpg);
+                    "
+                  >
+                    <div class="overlay-main bg-black opacity-04"></div>
+                    <div class="latest-blog-dark text-uppercase p-a20 d-none">
+                      <h3 class="m-a0 ">
+                        <span class="text-white">Title of recent project</span>
+                      </h3>
+                      <div class="v-date text-white font-weight-700">
+                       
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="overlay-wraper bg-no-repeat bg-cover latest-blog-dark-outer p-a20 m-b30"
+                    style="
+                      background-image: url(images/blog/landscap-half/pic2.jpg);
+                    "
+                  >
+                    <div class="overlay-main bg-black opacity-04"></div>
+                    <div class="latest-blog-dark text-uppercase p-a20">
+                      <h3 class="m-a0">
+                        <span class="text-white">Lucknow Airport Project</span>
+                      </h3>
+                      <div class="v-date text-white font-weight-700">
+                       
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                  <div
+                    class="overlay-wraper bg-no-repeat bg-cover latest-blog-dark-outer2 m-b30"
+                    style="background-image: url(images/blog/square/pic1.jpg)"
+                  >
+                    <div class="overlay-main bg-black opacity-04"></div>
+                    <div class="latest-blog-square text-white">
+                      <h2 class="m-t0 m-b10">
+                        <span class="text-white font-30 text-uppercase"
+                          >Scope of Work</span
+                        >
+                      </h2>
+                      <ul class="font-weight-300">
+                        <li>Detailed BIM development of GRC Facade Panelization</li>
+                        <li>Geometry control and alignment for curved and vertical surfaces</li>
+                        <li>BIM modeling of complex food hall ceiling systems</li>
+                        <li>Coordination for constructability and design intent</li>
+                      </ul>
+                      <a
+                        href="post-right-sidebar.html"
+                        class="letter-spacing-4 font-12 text-white text-uppercase"
+                        ></a
+                      >
+                      <!-- <div
+                        class="v-date text-white font-weight-700 text-uppercase"
+                      >
+                        10 Aug 2026
+                      </div> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div
+              class="hilite-title p-lr20 m-tb20 text-right text-uppercase bdr-gray bdr-right"
+            >
+              <strong>Projects</strong>
+              <span class="text-black">Overview</span>
+            </div>
+          </div>
+        </div>
+        <!-- BLOG SECTION END -->
+
+        <!-- COMPANY DETAIL SECTION START -->
+        <div
+          class="section-full p-t40 p-b50 overlay-wraper bg-top-center bg-parallax"
+          data-stellar-background-ratio="0.5"
+          style="background-image: url(images/background/bg-11.jpg)"
+        >
+          <div class="overlay-main opacity-08 bg-black"></div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 col-md-12">
+                <div class="row some-facts-counterx pt-5">
+                  <div class="col-md-4 col-sm-4">
+                    <div class="wt-icon-box-wraper p-a10 text-white m-b30">
+                      <div class="icon-content text-center">
+                        <div class="font-40 font-weight-600 m-b5">
+                          <span class="counter">451</span>
+                        </div>
+                        <div class="wt-separator-outer m-b20">
+                          <div class="wt-separator bg-white"></div>
+                        </div>
+                        <span class="text-uppercase">Square Feet Covered</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-4">
+                    <div class="wt-icon-box-wraper p-a10 text-white m-b30">
+                      <div class="icon-content text-center">
+                        <div class="font-40 font-weight-600 m-b5">
+                          <span class="counter">10</span>
+                        </div>
+                        <div class="wt-separator-outer m-b20">
+                          <div class="wt-separator bg-white"></div>
+                        </div>
+                        <span class="text-uppercase">Ongoing Projects</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-4">
+                    <div class="wt-icon-box-wraper p-a10 text-white m-b30">
+                      <div class="icon-content text-center">
+                        <div class="font-40 font-weight-600 m-b5">
+                          <span class="counter">5</span>
+                        </div>
+                        <div class="wt-separator-outer m-b20">
+                          <div class="wt-separator bg-white"></div>
+                        </div>
+                        <span class="text-uppercase">Projects Completed</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- COMPANY DETAIL SECTION End -->
+
+        <!-- TESTIMONIALS SECTION START -->
+        <div
+          class="section-full p-t80 clearfixbg-repeat"
+          style="background-image: url(images/background/ptn-1.png)"
+        >
+          <div class="container">
+            <div class="section-content">
+              <!-- TITLE START -->
+              <div class="section-head text-left">
+                <h2 class="text-uppercase font-36">Testimonials</h2>
+                <div class="wt-separator-outer">
+                  <div class="wt-separator bg-black"></div>
+                </div>
+              </div>
+              <!-- TITLE END -->
+              <!-- TESTIMONIAL 4 START ON BACKGROUND -->
+              <div class="section-content">
+                <div class="owl-carousel testimonial-home">
+                  <div class="item">
+                    <div class="testimonial-6">
+                      <div class="testimonial-pic-block">
+                        <div class="testimonial-pic">
+                          <img
+                            src="images/testimonials/pic1.jpg"
+                            width="132"
+                            height="132"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <div class="testimonial-text clearfix bg-white">
+                        <div class="testimonial-detail clearfix">
+                          <strong class="testimonial-name"
+                            >Taylor Roberts</strong
+                          >
+                          <span class="testimonial-position p-t0"
+                            >Co-manager associated</span
+                          >
+                        </div>
+                        <div class="testimonial-paragraph text-black p-t15">
+                          <span class="fa fa-quote-left"></span>
+                          <p>
+                            Highly recommended for anyone looking for thoughtful, innovative, and exceptional architectural design.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="testimonial-6">
+                      <div class="testimonial-pic-block">
+                        <div class="testimonial-pic">
+                          <img
+                            src="images/testimonials/pic4.jpg"
+                            width="132"
+                            height="132"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <div class="testimonial-text clearfix bg-white">
+                        <div class="testimonial-detail clearfix">
+                          <strong class="testimonial-name"
+                            >Robert willson</strong
+                          >
+                          <span class="testimonial-position p-t0"
+                            >Co-manager associated</span
+                          >
+                        </div>
+                        <div class="testimonial-paragraph text-black p-t15">
+                          <span class="fa fa-quote-left"></span>
+                          <p>
+                            Exceptional Design, Professionalism & Attention to Detail.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="testimonial-6">
+                      <div class="testimonial-pic-block">
+                        <div class="testimonial-pic">
+                          <img
+                            src="images/testimonials/pic2.jpg"
+                            width="132"
+                            height="132"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <div class="testimonial-text clearfix bg-white">
+                        <div class="testimonial-detail clearfix">
+                          <strong class="testimonial-name"
+                            >Taylor Roberts</strong
+                          >
+                          <span class="testimonial-position p-t0"
+                            >Co-manager associated</span
+                          >
+                        </div>
+                        <div class="testimonial-paragraph text-black p-t15">
+                          <span class="fa fa-quote-left"></span>
+                          <p>
+                            The creativity, attention to detail, and commitment to quality truly stood out..
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="testimonial-6">
+                      <div class="testimonial-pic-block">
+                        <div class="testimonial-pic">
+                          <img
+                            src="images/testimonials/pic3.jpg"
+                            width="132"
+                            height="132"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <div class="testimonial-text clearfix bg-white">
+                        <div class="testimonial-detail clearfix">
+                          <strong class="testimonial-name"
+                            >Robert willson</strong
+                          >
+                          <span class="testimonial-position p-t0"
+                            >Co-manager associated</span
+                          >
+                        </div>
+                        <div class="testimonial-paragraph text-black p-t15">
+                          <span class="fa fa-quote-left"></span>
+                          <p>
+                           The final result exceeded our expectations, and we couldn’t be happier with our space.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="testimonial-6">
+                      <div class="testimonial-pic-block">
+                        <div class="testimonial-pic">
+                          <img
+                            src="images/testimonials/pic1.jpg"
+                            width="132"
+                            height="132"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <div class="testimonial-text clearfix bg-white">
+                        <div class="testimonial-detail clearfix">
+                          <strong class="testimonial-name"
+                            >Taylor Roberts</strong
+                          >
+                          <span class="testimonial-position p-t0"
+                            >Co-manager associated</span
+                          >
+                        </div>
+                        <div class="testimonial-paragraph text-black p-t15">
+                          <span class="fa fa-quote-left"></span>
+                          <p>
+                            The team understood our vision perfectly and transformed it into a space that feels both beautiful and practical.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="testimonial-6">
+                      <div class="testimonial-pic-block">
+                        <div class="testimonial-pic">
+                          <img
+                            src="images/testimonials/pic4.jpg"
+                            width="132"
+                            height="132"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <div class="testimonial-text clearfix bg-white">
+                        <div class="testimonial-detail clearfix">
+                          <strong class="testimonial-name"
+                            >Taylor Roberts</strong
+                          >
+                          <span class="testimonial-position p-t0"
+                            >Co-manager associated</span
+                          >
+                        </div>
+                        <div class="testimonial-paragraph text-black p-t15">
+                          <span class="fa fa-quote-left"></span>
+                          <p>
+                            Their attention to detail and thoughtful approach made the entire process seamless. We are absolutely delighted with the result.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div
+              class="hilite-title p-lr20 m-tb20 text-right text-uppercase bdr-gray bdr-right"
+            >
+              <strong>Clients</strong>
+              <span class="text-black">Say</span>
+            </div>
+          </div>
+        </div>
+       
+
+      <!-- FOOTER START -->
+      <footer class="site-footer bg-gray footer-light footer-wide">
+        <div class="footer-bottom overlay-wraper">
+          <div class="overlay-main bg-black" style="opacity: 0"></div>
+          <div class="container p-t30">
+            <div
+              class="footer-bottom-content d-flex align-items-center justify-content-between"
+            >
+              <div class="wt-footer-bot-left">
+                <a href="#"
+                  ><img
+                    src="images/logo-dark.png"
+                    width="140"
+                    height="58"
+                    alt=""
+                /></a>
+              </div>
+
+              <div class="text-center copyright-block p-t15">
+                <span class="copyrights-text"
+                  >© 2026 Nova Cluster. Simulation Digitalised Solutions for AEC Industry.</span
+                >
+              </div>
+
+              <div class="wt-footer-bot-right p-t15">
+                <ul class="copyrights-nav pull-right">
+                  <li><a href="about-1.html">Terms & Condition</a></li>
+                  <li><a href="about-1.html">Privacy Policy</a></li>
+                  <li><a href="contact-1.html">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- FOOTER END -->
+
+      <!-- BUTTON TOP START -->
+      <button class="scroltop">
+        <span class="fa fa-angle-up relative" id="btn-vibrate"></span>
+      </button>
+    </div>
+
+    <!-- LOADING AREA START ===== -->
+    <div class="loading-area">
+      <div class="loading-box"></div>
+      <div class="loading-pic">
+        <svg id="triangle" width="140px" height="140px" viewBox="-3 -4 39 39">
+          <polygon
+            fill="#fff"
+            stroke="#000"
+            stroke-width="2"
+            points="16,0 32,32 0,32"
+          ></polygon>
+        </svg>
+      </div>
+    </div>
+    <!-- LOADING AREA  END ====== -->
+
+    <!-- JAVASCRIPT  FILES ========================================= -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- JQUERY.MIN JS -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- BOOTSTRAP.MIN JS -->
+    <script src="js/magnific-popup.min.js"></script>
+    <!-- MAGNIFIC-POPUP JS -->
+    <script src="js/waypoints.min.js"></script>
+    <!-- WAYPOINTS JS -->
+    <script src="js/counterup.min.js"></script>
+    <!-- COUNTERUP JS -->
+    <script src="js/waypoints-sticky.min.js"></script>
+    <!-- COUNTERUP JS -->
+    <script src="js/isotope.pkgd.min.js"></script>
+    <!-- MASONRY  -->
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <!-- MASONRY  -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- OWL  SLIDER  -->
+    <script src="js/jquery.owl-filter.js"></script>
+    <script src="js/scrolla.min.js"></script>
+    <!-- ON SCROLL CONTENT ANIMTE   -->
+    <script src="js/custom.js"></script>
+    <!-- CUSTOM FUCTIONS  -->
+    <script src="js/shortcode.js"></script>
+    <!-- SHORTCODE FUCTIONS  -->
+
+    <!-- REVOLUTION JS FILES -->
+    <script src="plugins/revolution/revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script src="plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="plugins/revolution/revolution/js/extensions/revolution-plugin.js"></script>
+
+    <!-- REVOLUTION SLIDER SCRIPT FILES -->
+    <script src="js/rev-script-1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html-tpl-loader@1.0.0/index.min.js"></script>
+  </body>
+
+</html>
